@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: var(--background-gradient);
+  color: var(--text) !important;
+  font-family: "Nunito", sans-serif !important;
+}
