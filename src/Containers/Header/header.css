@@ -9,6 +9,42 @@
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+.nav-link, .nav-link:hover, .nav-link:focus {
+  color: var(--text);
+  opacity: 1;
+}
+
+.nav-link {
+  opacity: 0.8;
+}
+
+.icon, .icon:hover {
+  color: var(--text);
+  opacity: 1;
+  transition: var(--base-transition-duration);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.icon {
+  opacity: 0.8;
+}
+
+.burger-menu {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  transition: var(--base-transition-duration);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--overflow-background-color);
+}
+
+.burger-menu.active {
+  right: 0;
+}
 
 @-webkit-keyframes tracking-in-expand {
   0% {
