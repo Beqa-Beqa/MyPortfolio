@@ -6,4 +6,5 @@ body {
   background-image: var(--background-gradient);
   color: var(--text) !important;
   font-family: "Nunito", sans-serif !important;
+  overflow-x: hidden !important;
 }

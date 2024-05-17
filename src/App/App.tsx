@@ -8,7 +8,7 @@ const App = () => {
       <header className="pb-5">
         <Container.Header />
       </header>
-      <main className="mt-5">
+      <main className="mt-2">
         <Container.Main />
       </main>
       <footer>

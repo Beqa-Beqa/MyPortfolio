@@ -10,3 +10,11 @@
     <li>Added context folder with currently only "GeneralContextProvider"</li>
     <li>Added framer-motion library (not in use yet)</li>
   </ul>
+
+# [0.3.0]
+  ## Added
+  <ul>
+    <li>Lottie-react package</li>
+    <li>Created About Me component, for now it's enough, added laptop animation</li>
+    <li>Background of the app has to be changed</li>
+  </ul>
