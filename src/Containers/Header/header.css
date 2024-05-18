@@ -9,13 +9,19 @@
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: var(--overflow-background-color);
+  z-index: 100;
+}
+
 .nav-link, .nav-link:hover, .nav-link:focus {
   color: var(--text);
   opacity: 1;
 }
 
 .nav-link {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .icon, .icon:hover {

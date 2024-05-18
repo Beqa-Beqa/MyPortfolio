@@ -14,9 +14,9 @@ const AboutMe = () => {
 
   return (
     <section className="section" id="about-me">
-      <Stack direction={`${screenWidth <= 768 ? "vertical" : "horizontal"}`}>
+      <Stack direction={`${screenWidth <= 1366 ? "vertical" : "horizontal"}`}>
         <div style={{flex: "0.9"}}>
-          <h1 className="fs-1 about-me">About me</h1>
+          <h1 className="fs-1 header">About me</h1>
           <Stack className="mt-5 fs-4 lh-sm" gap={4}>
             <p>
               Hi there! I'm Beka Aladashvili, a passionate <strong className="fw-bold">Web Developer</strong> based in Tbilisi.
@@ -29,7 +29,7 @@ const AboutMe = () => {
               user-friendly interfaces.
             </p>
             <p>
-              Beyond coding, i enjoy playing chess and exploring new technologies.
+              Beyond Front-End projects, i enjoy solving leetcode problems, playing chess and exploring new technologies.
             </p>
             <p>
             Feel free to get in touch if you'd like to collaborate, chat about tech, or let's play chess!

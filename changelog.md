@@ -16,5 +16,26 @@
   <ul>
     <li>Lottie-react package</li>
     <li>Created About Me component, for now it's enough, added laptop animation</li>
+  </ul>
+  
+  ## Note
+  <ul>
     <li>Background of the app has to be changed</li>
+  <ul>
+
+# [0.4.0]
+  ## Added
+  <ul>
+    <li>Skill section with wave animation showcasing skills</li>
+  </ul>
+
+  ## Changed
+  <ul>
+    <li>Background gradient changed</li>
+  <ul>
+
+  ## Note
+  <ul>
+    <li>Responsivness has to be fixed</li>
+    <li>Better navbar color should be set</li>
   </ul>

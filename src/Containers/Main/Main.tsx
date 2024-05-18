@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <Stack>
       <Components.AboutMe />
-      <section id="skills"></section>
+      <Components.Skills />
       <section id="projects"></section>
       <section id="contact"></section>
     </Stack>

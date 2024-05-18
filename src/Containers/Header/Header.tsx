@@ -30,9 +30,8 @@ const Header = () => {
 
   return (
     <Stack
-      style={{backgroundColor: "var(--overflow-background-color)", zIndex: 100}}
       direction="horizontal"
-      className="text-center text-lg-start justify-content-between position-fixed top-0 start-0 w-100 px-xl-5 px-md-4 px-sm-2 px-1 py-2"
+      className="navbar text-center text-lg-start justify-content-between position-fixed top-0 start-0 w-100 px-xl-5 px-md-4 px-sm-2 px-1 py-2"
     >
       <div
         style={{ filter: "blur(100px)" }}
