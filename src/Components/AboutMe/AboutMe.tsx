@@ -13,7 +13,7 @@ const AboutMe = () => {
   const laptopAnimRef = useRef<LottieRefCurrentProps>(null);
 
   return (
-    <section className="section" id="about-me">
+    <section className="section mb-4" id="about-me">
       <Stack direction={`${screenWidth <= 1366 ? "vertical" : "horizontal"}`}>
         <div style={{flex: "0.9"}}>
           <h1 className="fs-1 header">About me</h1>
@@ -34,15 +34,15 @@ const AboutMe = () => {
             <p>
             Feel free to get in touch if you'd like to collaborate, chat about tech, or let's play chess!
             </p>
-            <Stack className="justify-content-end" direction="horizontal" gap={3}>
+            <Stack className={`justify-content-${screenWidth <= 1366 ? "center" : "end"}`} direction="horizontal" gap={3}>
               <Button onClick={() => {
                 document.getElementById("projects")?.scrollIntoView({behavior: "smooth"});
-              }} size="lg" variant="outline-light">
+              }} size={`${screenWidth <= 768 ? "sm" : "lg"}`} variant="outline-light">
                 View My Work
               </Button>
               <Button onClick={() => {
                 document.getElementById("contact")?.scrollIntoView({behavior: "smooth"});
-              }} size="lg" variant="outline-light">
+              }} size={`${screenWidth <= 768 ? "sm" : "lg"}`} variant="outline-light">
                 Contact Me
               </Button>
             </Stack>

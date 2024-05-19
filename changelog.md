@@ -39,3 +39,14 @@
     <li>Responsivness has to be fixed</li>
     <li>Better navbar color should be set</li>
   </ul>
+
+# [0.4.1]
+  ## Changed
+  <ul>
+    <li>Made skills section responsive</li>
+  </ul>
+  
+  ## Note
+  <ul>
+    <li>Styles and content might be changed</li>
+  </ul>

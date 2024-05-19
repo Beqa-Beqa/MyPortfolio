@@ -57,5 +57,5 @@ html {
 	--background-gradient: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
 	--text: #F8F8FF;
 	--base-transition-duration: 0.2s;
-	--overflow-background-color: #333;
+	--overflow-background-color: rgb(60, 60, 60);
 }

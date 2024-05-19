@@ -6,7 +6,7 @@ const SkillCard = (props: {
 }) => {
   return (
     <div className="item position-relative" style={{backgroundImage: `url(${props.imgUrl})`}}>
-      {props.text && <span style={{bottom: "-35px"}} className="position-absolute fs-5 text-center w-100">{props.text}</span>}
+      {props.text && <span style={{bottom: "-30px"}} className="position-absolute text-center w-100">{props.text}</span>}
     </div>
   );
 }
