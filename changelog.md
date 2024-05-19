@@ -21,18 +21,18 @@
   ## Note
   <ul>
     <li>Background of the app has to be changed</li>
-  <ul>
+  </ul>
 
 # [0.4.0]
   ## Added
   <ul>
     <li>Skill section with wave animation showcasing skills</li>
-  </ul>
+
 
   ## Changed
   <ul>
     <li>Background gradient changed</li>
-  <ul>
+  </ul>
 
   ## Note
   <ul>
@@ -50,3 +50,4 @@
   <ul>
     <li>Styles and content might be changed</li>
   </ul>
+</ul>
