@@ -51,7 +51,7 @@
     <li>Styles and content might be changed</li>
   </ul>
 
-#[0.5.0]
+# [0.5.0]
   ## Added
   <ul>
     <li>Projects section</li>
@@ -62,3 +62,12 @@
     <li>Structure of folders in project, added Data directory and Assets.</li>
     <li>Mapping through skills and projects data array instead of hardcoding.</li>
   </ul>
+
+# [0.6.0]
+  ## Added
+  <ul>
+    <li>Footer section</li>
+  </ul>
+
+  ## Note
+  <p>Some changes may still be made in footer, also styles has to be changed a bit</p>

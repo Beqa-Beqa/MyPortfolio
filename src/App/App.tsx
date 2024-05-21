@@ -11,7 +11,7 @@ const App = () => {
       <main className="mt-5 mt-xxl-4">
         <Container.Main />
       </main>
-      <footer>
+      <footer style={{marginTop: 100}}>
         <Container.Footer />
       </footer>
     </div>
