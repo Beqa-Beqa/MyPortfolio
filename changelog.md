@@ -50,3 +50,15 @@
   <ul>
     <li>Styles and content might be changed</li>
   </ul>
+
+#[0.5.0]
+  ## Added
+  <ul>
+    <li>Projects section</li>
+  </ul>
+ 
+  ## Changed
+  <ul>
+    <li>Structure of folders in project, added Data directory and Assets.</li>
+    <li>Mapping through skills and projects data array instead of hardcoding.</li>
+  </ul>
