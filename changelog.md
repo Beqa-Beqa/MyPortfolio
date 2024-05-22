@@ -71,3 +71,7 @@
 
   ## Note
   <p>Some changes may still be made in footer, also styles has to be changed a bit</p>
+
+# [0.6.1]
+  ## Added
+  <p>Navbar that hides on scroll down and shows on scroll up</p>

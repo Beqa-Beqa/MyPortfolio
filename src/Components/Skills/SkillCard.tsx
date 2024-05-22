@@ -5,7 +5,7 @@ const SkillCard = (props: {
   text?: string
 }) => {
   return (
-    <div className="item position-relative" style={{backgroundImage: `url(${props.imgUrl})`}}>
+    <div className="item position-relative user-select-none" style={{backgroundImage: `url(${props.imgUrl})`}}>
       {props.text && <span style={{bottom: "-30px"}} className="position-absolute text-center w-100">{props.text}</span>}
     </div>
   );

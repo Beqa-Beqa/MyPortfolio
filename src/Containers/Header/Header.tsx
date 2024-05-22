@@ -5,12 +5,24 @@ import { GeneralContext } from "../../Contexts";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdClose } from "react-icons/md";
 import { NavLinks } from "../../Components";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 
 const Header = () => {
   // screen width
   const { screenWidth } = useContext(GeneralContext);
   // burger menu state
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState<boolean>(false);
+  // scroll position
+  const { scrollY } = useScroll();
+  // nav state
+  const [hiddenNav, setHiddenNav] = useState(false);
+
+  // check scroll change, whether to hide navbar or to show.
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() || 0;
+    if(latest > previous && latest > 150) setHiddenNav(true);
+    else setHiddenNav(false);
+  })
 
   // navbar links generator
   const navLinks = useCallback(
@@ -30,11 +42,11 @@ const Header = () => {
 
   return (
     <Stack
+      style={{top: hiddenNav ? "-100%" : 0}}
       direction="horizontal"
-      className="navbar text-center text-lg-start justify-content-between position-fixed top-0 start-0 w-100 px-xl-5 px-md-4 px-sm-2 px-1 py-2"
+      className="navbar position-fixed text-center text-lg-start justify-content-between w-100 px-xl-5 px-md-4 px-sm-2 px-1 py-2"
     >
       <div
-        style={{ filter: "blur(100px)" }}
         className="w-100 position-absolute top-0 start-0"
       />
       <div className="tracking-in-expand align-self-start">

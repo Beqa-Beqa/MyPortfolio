@@ -37,12 +37,12 @@ const AboutMe = () => {
             <Stack className={`justify-content-${screenWidth <= 1366 ? "center" : "end"}`} direction="horizontal" gap={3}>
               <Button onClick={() => {
                 document.getElementById("projects")?.scrollIntoView({behavior: "smooth"});
-              }} size={`${screenWidth <= 768 ? "sm" : "lg"}`} variant="outline-light">
+              }} size="lg" variant="outline-light">
                 View My Work
               </Button>
               <Button onClick={() => {
                 document.getElementById("contact")?.scrollIntoView({behavior: "smooth"});
-              }} size={`${screenWidth <= 768 ? "sm" : "lg"}`} variant="outline-light">
+              }} size="lg" variant="outline-light">
                 Contact Me
               </Button>
             </Stack>

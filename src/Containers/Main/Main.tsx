@@ -8,7 +8,6 @@ const Main = () => {
       <Components.AboutMe />
       <Components.Skills />
       <Components.Projects />
-      <section id="contact"></section>
     </Stack>
   );
 }
