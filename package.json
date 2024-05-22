@@ -2,7 +2,7 @@
   "name": "myportfolio",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/myportfolio",
+  "homepage": "https://beqa-beqa.github.io/MyPortfolio",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
