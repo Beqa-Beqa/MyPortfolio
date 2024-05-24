@@ -1,11 +1,16 @@
-import { skillsData } from "../../Data";
+import { Header } from "../../Components";
+import { pageVariants, skillsData } from "../../Data";
 import SkillCard from "./SkillCard";
 import "./skills.css";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <section id="skills">
-      <h1 className="fs-1 header text-center mb-5">Skills</h1>
+    <motion.section
+      id="skills"
+      {...pageVariants}
+    >
+      <Header title="Skills" />
       {/* Wave anim below*/}
       <div className="wrapper gap-5 w-lg-100">
         {skillsData?.length
@@ -30,7 +35,7 @@ const Skills = () => {
           : null}
       </div>
       {/* Wave anim above*/}
-    </section>
+    </motion.section>
   );
 };
 

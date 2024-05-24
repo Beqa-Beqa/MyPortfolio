@@ -62,8 +62,10 @@ html {
 }
 
 :root {
-	--background-gradient: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
-	--text: #F8F8FF;
+	--background-color: #222222;
+	--head-text: #FFFAFA;
+	--text: #fffaface;
+	--text-hover: #639FAB;
 	--base-transition-duration: 0.2s;
-	--overflow-background-color: rgb(60, 60, 60);
+	--overflow-background-color: #1C5D99;
 }

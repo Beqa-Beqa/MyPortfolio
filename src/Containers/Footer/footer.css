@@ -1,26 +1,30 @@
+#footer {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
 .title {
   font-family: "Dancing Script", cursive;
 }
 
-.icon-wrapper {
-  display: flex;
-  align-items: end;
-  cursor: pointer;
-  height: 60px;
-  position: relative;
-  top: -20px;
+.image-wrapper img {
+  --s: 13px; /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
 }
 
-.icon-wrapper:hover .icon {
+.contact-icon {
+  display: block !important;
+  width: 50px;
+  height: 50px;
+  fill: var(--head-text);
+  opacity: 0.6;
+  transition: var(--base-transition-duration);
+}
+
+.contact-icon:hover {
   opacity: 1;
-  transition: calc(var(--base-transition-duration) * 2);
-  transform: translate(0, -20px);
-}
-
-.icon-wrapper .icon {
-  width: 40px;
-  height: 40px;
-  fill: var(--text);
-  opacity: 0.7;
-  transform: translate(0, 0);
 }

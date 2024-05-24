@@ -1,2 +1,3 @@
-export {default as skillsData} from "./skills";
-export {default as projectsData} from  "./projects";
+export { default as skillsData } from "./skills";
+export { default as projectsData } from "./projects";
+export { pageVariants } from "./pageAnimations";

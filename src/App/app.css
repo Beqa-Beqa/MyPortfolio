@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
   min-width: 100vw;
   min-height: 100vh;
-  background-image: var(--background-gradient);
+  background: var(--background-color);
   color: var(--text) !important;
   font-family: "Nunito", sans-serif !important;
   overflow-x: hidden !important;
+}
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-family: "Space Mono", monospace;
+  color: var(--head-text);
+}
+
+.overflow-bg {
+  background-color: var(--overflow-background-color);
 }

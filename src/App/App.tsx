@@ -1,20 +1,26 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
-import * as Container from "../Containers";
+import * as Containers from "../Containers";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
+  const location = useLocation();
+
   return (
-    <div>
-      <header>
-        <Container.Header />
-      </header>
-      <main className="px-xl-5 px-md-4 px-sm-2 px-1 py-3">
-        <Container.Main />
-      </main>
-      <footer className="pb-4" style={{marginTop: 100}}>
-        <Container.Footer />
-      </footer>
-    </div>
+    <main>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/MyPortfolio">
+            <Route index element={<Containers.Header />} />
+            <Route path="aboutme" element={<Containers.AboutMe />} />
+            <Route path="skills" element={<Containers.Skills />} />
+            <Route path="projects" element={<Containers.Projects />} />
+            <Route path="contact" element={<Containers.Footer />} />
+          </Route>
+        </Routes>
+      </AnimatePresence>
+    </main>
   );
 }
  

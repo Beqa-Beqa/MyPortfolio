@@ -9,11 +9,11 @@ const NavLinks = (props: {
   const {clickAction, gap, direction} = props;
 
   return (
-    <Nav variant="underline" className={`fs-5 gap-${gap} ${direction === "column" && "flex-column"}`}>
-      <Nav.Link onClick={() => clickAction("about-me")}>About me</Nav.Link>
-      <Nav.Link onClick={() => clickAction("skills")}>Skills</Nav.Link>
-      <Nav.Link onClick={() => clickAction("projects")}>Projects</Nav.Link>
-      <Nav.Link onClick={() => clickAction("contact")}>Contact</Nav.Link>
+    <Nav variant="underline" className={`fs-4 gap-${gap} ${direction === "column" && "flex-column"}`}>
+      <Nav.Link className="text-center" onClick={() => clickAction("aboutme")}>About me</Nav.Link>
+      <Nav.Link className="text-center" onClick={() => clickAction("skills")}>Skills</Nav.Link>
+      <Nav.Link className="text-center" onClick={() => clickAction("projects")}>Projects</Nav.Link>
+      <Nav.Link className="text-center" onClick={() => clickAction("contact")}>Contact</Nav.Link>
     </Nav>
   );
 }
