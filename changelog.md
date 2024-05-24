@@ -75,3 +75,11 @@
 # [0.6.1]
   ## Added
   <p>Navbar that hides on scroll down and shows on scroll up</p>
+
+# [1.0.0] // New Style Portfolio
+  ## Added
+  <p>Added animation on page change</p>
+  <p>Added React-router-dom package for routes handling</p>
+
+  ## Changed
+  <p>Whole style of page</p>
